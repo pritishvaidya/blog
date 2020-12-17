@@ -1,4 +1,18 @@
-MIT License
+# Articles
+
+All the files inside `content/blog` directory are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The attribution requirement is only met when:
+
+1. The canonical link is directed towards the original article, e.g.
+   `<link rel="canonical" href="https://blog.pritishvaidya.dev/flip-timer" />`
+2. The following message is displayed above and below the article:
+   `This article has been originally published on <a href="https://blog.pritishvaidya.dev/flip-timer">Pritish Vaidya's Blog</a>.`
+
+# Other files
+
+Files not mentioned in previous paragraphs are licensed under MIT License.
+
+## MIT License
 
 Copyright (c) 2020 Pritish
 
