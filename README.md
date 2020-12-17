@@ -4,6 +4,6 @@
 
 ## Licenses
 
-The code licensed under [MIT](./LICENSE).
+The code licensed under [MIT](LICENSE.md).
 
-The articles / posts are licensed under [CC BY 4.0](./LICENSE).
+The articles / posts are licensed under [CC BY 4.0](LICENSE.md).
