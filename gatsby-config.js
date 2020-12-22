@@ -64,7 +64,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-panelbear`,
       options: {
-        siteID: process.env.SITE_ID,
+        siteID: process.env.GATSBY_SITE_ID,
       },
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
