@@ -6184,6 +6184,11 @@ gatsby-plugin-page-creator@^2.4.0:
     graphql "^14.7.0"
     lodash "^4.17.20"
 
+gatsby-plugin-panelbear@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-panelbear/-/gatsby-plugin-panelbear-1.1.0.tgz#ee53a8358b64dabaea17c9688a85990c46ee56a3"
+  integrity sha512-OfRyvqyqPvxjLe1g2MDzATLAUHLR2iiJLCAfJm7Sx95Ps4Cjuy+mKmVm68KbcQZYUrw+ybmDq8KSw84rbsebhg==
+
 gatsby-plugin-react-helmet@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.4.0.tgz#fe7ef70d1643976b7e6530ff0808429026ebf7c2"
