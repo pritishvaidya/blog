@@ -1,4 +1,4 @@
-# Pritish Vaidya's Blog
+# [Pritish Vaidya's Blog](https://blog.pritishvaidya.dev)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c9ad371c-7ae3-480e-9fe6-6d60e7a62a18/deploy-status)](https://app.netlify.com/sites/pritish-vaidya-blog/deploys)
 
