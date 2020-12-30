@@ -14,7 +14,7 @@ than the redux store.
 Here’s a basic example from the
 [docs](https://github.com/redux-saga/redux-saga/blob/master/docs/advanced/Channels.md#using-the-eventchannel-factory-to-connect-to-external-events):
 
-```
+```js
   import { eventChannel, END } from 'redux-saga'
   
   function countdown(secs) {
@@ -53,7 +53,7 @@ The React Native’s **NetInfo** `isConnected` API asynchronously fetches a
 
 **First, we need to create a start channel method.**
 
-```
+```js
   function * startChannel(syncActionName) {
     const channel = eventChannel(listener => {
       const handleConnectivityChange = (isConnected) => {
@@ -68,7 +68,7 @@ The React Native’s **NetInfo** `isConnected` API asynchronously fetches a
 
 The next step is to **listen for the event changes** within the channel.
 
-```
+```js
   while (true) {
       const connectionInfo = yield take(channel);
     }
@@ -77,7 +77,7 @@ The next step is to **listen for the event changes** within the channel.
 The final step is to **pass a custom action** to the channel so that the value
 can be synced using your action.
 
-```
+```js
   while (true) {
       const connectionInfo = yield take(channel);
       yield put({type: syncActionName, status: connectionInfo }); // blocking action
@@ -88,7 +88,7 @@ This **channel** can be used in our default exported generator by using the
 [call](https://github.com/redux-saga/redux-saga/tree/master/docs/api#callfn-args)
 operation.
 
-```
+```js
   export default function* netInfoSaga(options = {}) {
     try {
       yield call(startChannel, options.syncAction);

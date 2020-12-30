@@ -51,7 +51,7 @@ The code can be split into two parts
 The constants can be used as defaults to the main function. The image tag has
 its own use which will be defined later.
 
-```
+```js
   const WORDS_PER_MIN = 275; // wpm
   
   const IMAGE_READ_TIME = 12; // in seconds
@@ -68,7 +68,7 @@ its own use which will be defined later.
 It is a simple utility function to remove all leading and trailing whitespace
 from the string provided.
 
-```
+```js
   function stripWhitespace(string) {
     return string.replace(/^\s+/, '').replace(/\s+$/, '');
   }
@@ -85,7 +85,7 @@ If the image count is greater than 10, we calculate the image read time of first
 
 and 3 sec for the remaining images.
 
-```
+```js
   function imageCount(imageTags, string) {
     const combinedImageTags = imageTags.join('|');
     const pattern = `<(${combinedImageTags})([\\w\\W]+?)[\\/]?>`;
@@ -114,7 +114,7 @@ and 3 sec for the remaining images.
 Next, we check for any HTML tags (both)in the string and remove it to extract
 only the words from it. 
 
-```
+```js
   function stripTags(string) {
     const pattern = '<\\w+(\\s+("[^"]*"|\\\'[^\\\']*\'|[^>])+)?>|<\\/\\w+>';
     const reg = new RegExp(pattern, 'gi');
@@ -129,7 +129,7 @@ Japanese* characters using the different *Unicode* character range.
 
 The time is calculated by dividing it with the constants defined above.
 
-```
+```js
   function wordsCount(string) {
     const pattern = '\\w+';
     const reg = new RegExp(pattern, 'g');
@@ -173,7 +173,7 @@ Based on the [distance of time in
 words](https://api.rubyonrails.org/classes/ActionView/Helpers/DateHelper.html#method-i-distance_of_time_in_words),
 we can calculate and return the humanized duration of the time taken to read.
 
-```
+```js
   function humanizeTime(time) {
     if (time < 0.5) {
       return 'less than a minute';
@@ -190,7 +190,7 @@ we can calculate and return the humanized duration of the time taken to read.
 The main function only consolidates all the utility methods in the correct
 order.
 
-```
+```js
   function readTime(
     string,
     customWordTime,
