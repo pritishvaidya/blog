@@ -60,6 +60,7 @@
   --color-heading: #1a202c;
   --color-heading-black: black;
   --color-accent: #d1dce5;
+  --form-shadow: 0 2px 15px 0 rgba(210,214,220,0.5);
 }
 
 /* HTML elements */
