@@ -58,7 +58,7 @@ For more info, you can try out the following link
 
 #### Add a Custom SoundCloudWave Component
 
-```
+```js
   fetch(waveformUrl.replace('png', 'json'))
      .then(res => res.json())
      .then((json) => {
@@ -81,7 +81,7 @@ API)
 
 #### Get the samples
 
-```
+```jsx
   const scaleLinearHeight = scaleLinear().domain([0, waveform.height]).range([0, height]);
   const chunks = _.chunk(waveform.samples, waveform.width / ((width - 60) / 3));
   return (
@@ -136,7 +136,7 @@ Get the samples by using a simple `GET` API call and store the result in the
 
 #### Create a Waveform Component
 
-```
+```jsx
   <View style={{ flex: 1, justifyContent: 'center' }}>
     <Waveform
       waveform={waveform}
@@ -186,7 +186,7 @@ set the new seek time of the track.
 
 Now this stateless component can be rendered to your child component as:
 
-```
+```jsx
   <SoundCloudWaveform
     waveformUrl={track.waveform_url}
     percentPlayable={playableTime}

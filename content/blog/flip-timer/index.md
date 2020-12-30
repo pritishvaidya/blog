@@ -43,7 +43,7 @@ It is a basic layout consisting of a wrapper and two cards — *lower* , *upper.
 *Note: Lower Card has the previous number added to it. Its use will be
 revealed once we reach the FoldView implementation.*
 
-```
+```jsx
   const size = 100
   const number = 5
 
@@ -78,7 +78,7 @@ revealed once we reach the FoldView implementation.*
 The wrapper of the card has `overflow: hidden` and we’re translating its items
 (number) based on the type of the card (upper or lower).
 
-```
+```jsx
   <View style={[style.card, type === 'upper' ? { borderBottomWidth: 0.5 } : { borderTopWidth: 0.5 }, cardStyle]}>
     <Text style={[style.number, {
       transform: [type === 'upper' ? { translateY: size * 0.3 } : { translateY: -size * 0.3 }],
@@ -115,7 +115,7 @@ animations are applied.
 **Number Card**\
 Adding FlipCard component to the NumberCard component.
 
-```
+```jsx
   <FlipCard
     type="front"
     number={previousNumber}
@@ -135,7 +135,7 @@ has major issues in *android. *With the help of this
 [StackOverflow](https://stackoverflow.com/a/21684490/6606831) post, it can be
 solved by using an *overflow container* inside the absolute positioned element.
 
-```
+```jsx
   <Animated.View
     ref={setRef}
     style={[style.flipCard,
@@ -212,7 +212,7 @@ The important ones that we require are\
 * **Identity Matrix**: It returns a 4 * 4 identity matrix `[1, 0, 0, 0, 0, 1, 0,
 0, 0, 0, 1, 0, 0, 0, 0, 1]` 
 
-```
+```js
   import MatrixMath from 'react-native/Libraries/Utilities/MatrixMath';
 
   const { createIdentityMatrix } = MatrixMath;
@@ -222,7 +222,7 @@ The important ones that we require are\
 * **Multiply Matrix**: This utility method generates output based on the
 multiplication of 4*4 matrices `a` and `b` supplied as input.
 
-```
+```js
   const { createIdentityMatrix } = MatrixMath;
   const { multiplyInto } = MatrixMath;
 
@@ -235,7 +235,7 @@ return the generated result.
 
 ![flip_timer](/flip_timer_3.png)
 
-```
+```js
   function rotateXMatrix(matrix, deg) {
     const rad = (Math.PI / 180) * deg;
     const cos = Math.cos(rad);
@@ -255,7 +255,7 @@ style to React Native and then multiply to the original 4*4 matrix.
 
 ![flip_timer](/flip_timer_4.png)
 
-```
+```js
   function perspectiveMatrix(matrix, value) {
     const perspective = createIdentityMatrix();
     MatrixMath.reusePerspectiveCommand(perspective, value);
@@ -268,7 +268,7 @@ the original 4*4 matrix
 
 ![flip_timer](/flip_timer_5.png)
 
-```
+```js
   function translateMatrix(matrix, origin) {
     const { x, y, z } = origin;
     const translate = createIdentityMatrix();
@@ -280,7 +280,7 @@ the original 4*4 matrix
 * **Un-Translate Matrix**: This utility method will un-translate the origin and
 modify the original 4*4 matrix
 
-```
+```js
   function untranslateMatrix(matrix, origin) {
     const { x, y, z } = origin;
     const unTranslate = createIdentityMatrix();
@@ -299,7 +299,7 @@ is implemented successfully.
 
 ![flip_timer](/flip_timer_6.png)
 
-```
+```js
   import TransformUtil from '../../utils';
 
   transformRef = (ref, deg, y) => {
@@ -314,7 +314,7 @@ is implemented successfully.
 
 #### Adding the Animations
 
-```
+```jsx
   componentDidMount() {
     const { size } = this.props;
     this.animateTick();
@@ -371,7 +371,7 @@ is implemented successfully.
 This util will increment the timer by one sec and adjust hours, minutes,
 seconds.
 
-```
+```js
   function addTime(hours, minutes, seconds) {
     hours = parseInt(hours);
     minutes = parseInt(minutes);
@@ -398,7 +398,7 @@ seconds.
 The timer component will call Time Util and update the component based on
 hours, minutes, seconds.
 
-```
+```jsx
   state = {
     hours: 0,
     minutes: 0,
@@ -446,7 +446,7 @@ hours, minutes, seconds.
 This component just splits number into two parts based on their digit placement
 and calls NumberCard component.
 
-```
+```jsx
   number = parseInt(number);
   let previousNumber = number - 1;
   if (unit !== 'hours') {

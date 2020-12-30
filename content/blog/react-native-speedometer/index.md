@@ -26,7 +26,7 @@ Other than that, we need one custom speedometer needle image.
 
 ### Default Props Overview
 
-```
+```js
   defaultValue: 50,
   minValue: 0,
   maxValue: 100,
@@ -93,7 +93,7 @@ There are three types of Utility functions that are required.
 This Simple Utility function will return the *per label degree* from the list of
 labels.
 
-```
+```js
   function calculateDegreeFromLabels(degree, labels) {
     const perLevelDegree = (degree) / (labels.length);
     return perLevelDegree;
@@ -110,7 +110,7 @@ level degree.
 This Utility function will return the current label from the list of labels
 based on the current value of the speedometer.
 
-```
+```js
   function calculateLabelFromValue(value, labels, minValue, maxValue) {
     const currentValue = (value - minValue) / (maxValue - minValue);
     const currentIndex = Math.round((labels.length - 1) * currentValue);
@@ -132,7 +132,7 @@ At last, we can return the label from the list based on the calculated index.
 This Utility function is used to limit the current value between `maxValue` and
 `minValue` .
 
-```
+```js
   function limitValue(value, minValue, maxValue, allowedDecimals) {
     let currentValue = 0;
     if (!isNaN(value)) {
@@ -150,7 +150,7 @@ This Utility function is used to limit the current value between `maxValue` and
 
 #### Adding the Styles
 
-```
+```js
   wrapper: {
     marginVertical: 5,
     alignSelf: 'center',
@@ -225,7 +225,7 @@ This Utility function is used to limit the current value between `maxValue` and
 
 #### Constructing the static component based on the styles
 
-```
+```jsx
   {labels.map((level, index) => {
       const circleDegree = 90 + (index * perLevelDegree);
       return (
@@ -255,7 +255,7 @@ styles to it later on.
 
 #### Adding the Utils
 
-```
+```js
   const degree = 180;
   const perLevelDegree = calculateDegreeFromLabels(degree, labels);
   const label = calculateLabelFromValue(
@@ -283,7 +283,7 @@ Adding the above changes will make the speedometer will something look like this
 
 #### Adding the Animations
 
-```
+```js
   Animated.timing(
     this.speedometerValue,
      {
@@ -310,7 +310,7 @@ Now this component is ready to be exported and used.
 
 ### Usage
 
-```
+```jsx
   state = {
     value: 0,
   };
