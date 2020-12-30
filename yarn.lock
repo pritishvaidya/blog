@@ -1011,6 +1011,16 @@
     ts-node "^9"
     tslib "^2"
 
+"@fontsource/montserrat@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.0.1.tgz#f959665dc3666705f29ca8b7206e019ae153e2a1"
+  integrity sha512-mnW+K5vAWjZ8ARi9lZXf6jmTfqBRSiWYHwbWMVib0erDwrFI26VritMQ8qZ9auJe8nUPXvxS+fvhk8kX2COJSQ==
+
+"@fontsource/open-sans@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.0.1.tgz#5d12357dbaf5ffa7722090b96386c84f99843732"
+  integrity sha512-Fd7oHcrRgDM0TnW3goSTtSTaDK76Wc6wsiAXSvsMOrq7SaawO+QLlTf6DIk6+tjTLZEVsPcuFtvtkm6/y7UFdg==
+
 "@graphql-tools/batch-execute@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@graphql-tools/batch-execute/-/batch-execute-7.0.0.tgz#e79d11bd5b39f29172f6ec2eafa71103c6a6c85b"
@@ -13460,16 +13470,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-
-typeface-merriweather@0.0.72:
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-merriweather/-/typeface-merriweather-0.0.72.tgz#2b990f5293252052d51d170c82d3892319ff0555"
-  integrity sha512-gO0+fcZ1fTyKUsYY1ltYOOTI6FmBGeEdyIfeQg9NL8aInndk0feiJJVJsKHm/DiyYrnQEezraAQhz/KQoqMGtw==
-
-typeface-montserrat@0.0.75:
-  version "0.0.75"
-  resolved "https://registry.yarnpkg.com/typeface-montserrat/-/typeface-montserrat-0.0.75.tgz#b796d9c767ab8ed1343271985beb1e44b382b7b3"
-  integrity sha512-8ski20t3hdwu2T85pVfjK4jsDbwW8yWzd+LAKxYEmu+JVLVlB7G2yfmdKZz06pUwYCLVFvHvup+NYYulHDpE+w==
 
 unbzip2-stream@^1.0.9:
   version "1.4.3"
