@@ -6,7 +6,7 @@ module.exports = {
       summary: `Working on solving some interesting problems`,
     },
     description: `My Personal Blog`,
-    siteUrl: `https://blog.pritishvaidya.dev`,
+    siteUrl: `https://blog.pritishvaidya.dev/`,
     repo: 'pritishvaidya/blog'
   },
   plugins: [
@@ -67,9 +67,7 @@ module.exports = {
       options: {
         siteID: process.env.GATSBY_SITE_ID,
       },
-    }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    },
+    `gatsby-plugin-offline`
   ],
 }

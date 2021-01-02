@@ -8,8 +8,9 @@
     "url": "https://github.com/pritishvaidya/blog/issues"
   },
   "dependencies": {
-    "@fontsource/montserrat": "^4.0.1",
-    "@fontsource/open-sans": "^4.0.1",
+    "@fontsource/montserrat": "^4.1.0",
+    "@fontsource/open-sans": "^4.1.0",
+    "@fontsource/space-mono": "^4.1.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-feed": "^2.7.0",

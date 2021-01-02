@@ -1011,15 +1011,20 @@
     ts-node "^9"
     tslib "^2"
 
-"@fontsource/montserrat@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.0.1.tgz#f959665dc3666705f29ca8b7206e019ae153e2a1"
-  integrity sha512-mnW+K5vAWjZ8ARi9lZXf6jmTfqBRSiWYHwbWMVib0erDwrFI26VritMQ8qZ9auJe8nUPXvxS+fvhk8kX2COJSQ==
+"@fontsource/montserrat@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.1.0.tgz#a5f4d334b3702699af88c5e6c5c6972095c2c947"
+  integrity sha512-Dqd+sGHfKg3TGlNs7f8VFQLjSgLcu6ZzlDS10rVDIs/YZVCWt9BMgdLF3n19QQt8HsuUteK+YOhswGL23W3Lgw==
 
-"@fontsource/open-sans@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.0.1.tgz#5d12357dbaf5ffa7722090b96386c84f99843732"
-  integrity sha512-Fd7oHcrRgDM0TnW3goSTtSTaDK76Wc6wsiAXSvsMOrq7SaawO+QLlTf6DIk6+tjTLZEVsPcuFtvtkm6/y7UFdg==
+"@fontsource/open-sans@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.1.0.tgz#d44b4495bd23d78018675e4e79973894e393c0ed"
+  integrity sha512-sWDAAr6ESHJdBKXse6njvZem4sTZLILkugaEfAvpdFiaKBh2RnXTa4DJllDh5LzP0MLMUrfj/JAjMbKxWFo6pQ==
+
+"@fontsource/space-mono@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/space-mono/-/space-mono-4.1.0.tgz#940aff85db011799253696740a95b732b88bca59"
+  integrity sha512-dsreOh9NuZCKendSmd/68UF27Z54PBRapiuZQFFdTiDawPxzLMmnEZcHXHWnLOCaT3G7IaL0RJqjWe+4kCJt4w==
 
 "@graphql-tools/batch-execute@^7.0.0":
   version "7.0.0"
