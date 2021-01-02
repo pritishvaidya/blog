@@ -6,7 +6,8 @@ module.exports = {
       summary: `Working on solving some interesting problems`,
     },
     description: `My Personal Blog`,
-    siteUrl: `https://pritish-vaidya-blog.netlify.app/`
+    siteUrl: `https://pritish-vaidya-blog.netlify.app/`,
+    repo: 'pritishvaidya/blog'
   },
   plugins: [
     {

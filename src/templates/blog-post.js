@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SubscriptionForm from "../components/subscription-form"
+import CommentSection from "../components/comment-section"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -36,6 +37,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <hr/>
         <footer>
           <Bio />
+          <CommentSection />
         </footer>
       </article>
       <aside>
