@@ -31,7 +31,7 @@ function CommentSection () {
       console.log(`Error adding utterances comments on: ${commentSectionRef}`)
     }
   }, [data]);
-  
+
   return <div ref={commentSectionRef} className="comments"/>;
 };
 
